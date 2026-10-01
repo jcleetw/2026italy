@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+:root { --ink:#1d211d; --cream:#f3f0e8; --olive:#69715b; }
+* { box-sizing: border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; color:var(--ink); background:var(--cream); font-family:Arial,"Noto Sans TC",sans-serif; }
+.serif { font-family: Georgia,"Noto Serif TC",serif; }
+.eyebrow { letter-spacing:.24em; text-transform:uppercase; font-size:.68rem; font-weight:600; }
+.page { min-height:100vh; padding:72px 20px 112px; max-width:1000px; margin:auto; }
+.photo { background-position:center; background-size:cover; }
+.card { border:1px solid rgba(29,33,29,.12); background:rgba(255,255,255,.35); }
+.fade { animation:fade .65s ease both; } @keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}

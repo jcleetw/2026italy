@@ -1,0 +1,2 @@
+import {photos} from "@/lib/data";
+export default function Photos(){return <main className="page fade"><p className="eyebrow text-[#69715b]">Visual diary</p><h1 className="serif text-5xl mt-3">旅程相簿</h1><p className="text-sm text-black/45 mt-3 mb-10">等待我們用 18 天，把這裡填滿。</p><div className="grid grid-cols-2 gap-2 auto-rows-[150px]">{[...photos,...photos].map((p,i)=><div key={i} className={`photo ${i%5===0?"row-span-2":""}`} style={{backgroundImage:`url('${p}')`}}><span className="m-3 inline-block text-[9px] text-white tracking-widest">0{i+1}</span></div>)}</div></main>}
